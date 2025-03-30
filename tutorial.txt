@@ -1,0 +1,5 @@
+write out the html form
+Types of css 
+inline -
+internal
+external

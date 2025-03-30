@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <meta name="description" content="This is a description form or a registration form" >
+    <meta name="author" content="Frontend Techwitscan" >
+    <meta name="keyword" content="code,html,css,form" >
+
+    <link rel="stylesheet" href="./index.css">
+    
+</head>
+<body>
+    <form>
+        <div class="one-line">
+            <div style="width: 50%;">
+                <label for="first-name" class="label-class">First Name:</label>
+                <input type="text" id="first-name" name="first_name" required>
+            </div>
+            <div style="width: 50%;">
+                <label for="last-name" class="label-class">Last Name:</label>
+                <input type="text" id="last-name" name="last_name" required>
+            </div>
+        </div>
+        
+        <label for="username" class="label-class">Username:</label>
+        <input type="text" id="username" name="username" required>
+        
+        <label for="email" class="label-class">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="phone" class="label-class">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required>
+        
+        <label for="password" class="label-class">Password:</label>
+        <input type="password" id="password" name="password" required>
+        
+        <label for="confirm-password" class="label-class">Confirm Password:</label>
+        <input type="password" id="confirm-password" name="confirm_password" required>
+        
+        <fieldset>
+            <legend>Tech Stack Familiarity:</legend>
+            <div class="check-div">
+                <input type="checkbox" id="html" name="tech_stack" value="HTML">
+                <label for="html" class="checkbox-label">HTML</label>
+            </div>
+            <div class="check-div">
+                <input type="checkbox" id="css" name="tech_stack" value="CSS">
+            <label for="css" class="checkbox-label">CSS</label>
+            </div>
+            <div class="check-div">
+                <input type="checkbox" id="js" name="tech_stack" value="JavaScript">
+            <label for="js" class="checkbox-label">JavaScript</label>
+            </div>
+            <div class="check-div">
+                <input type="checkbox" id="react" name="tech_stack" value="React">
+            <label for="react" class="checkbox-label">React</label>
+            </div>
+            <div class="check-div">
+                <input type="checkbox" id="node" name="tech_stack" value="Node.js">
+            <label for="node" class="checkbox-label">Node.js</label>
+            </div>
+        </fieldset>
+        
+        <label for="expectations">Expectations:</label>
+        <textarea id="expectations" name="expectations" rows="4"></textarea>
+        
+        <div class="check-div">
+            <input type="radio" id="accept" name="terms" value="accept" style="margin-bottom: 12px;" required>
+            <label for="accept" class="radio-label">I accept the terms and conditions</label>
+        </div>
+       
+        
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
